@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title%}
+главная страница
+{% endblock %}
+
+{% block body%}
+<div class="container mt-5">
+    <h1>Добавить картридж</h1>
+    <form method="post" >
+        <input type="text" name="model_card" id="model_card" class="form-control" placeholder="Введите модель картриджа"><br>
+        <input type="text" name="unit_card" id="unit_card"  class="form-control" placeholder="Введите подразделение"><br>
+        <input type="submit" class="btn btn-successbtn btn-lg btn-secondary" value="Добавить в базу данных">
+    </form>
+</div>
+{% endblock %}
